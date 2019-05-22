@@ -1,0 +1,16 @@
+<nav class="main-menu">
+
+  <ul>
+    <li *ngFor="let m of menus">
+      <a [href]="m.link">
+        <i class="fa">
+          <img [src]="m.urlimg" alt="">
+        </i>
+        <span class="nav-text">
+          {{m.display}}
+        </span>
+      </a>
+    </li>
+  </ul>
+
+</nav>
